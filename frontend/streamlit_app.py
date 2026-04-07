@@ -7,7 +7,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "http://localhost:8000"
+API_URL = "https://med-text-classifier.onrender.com"
 
 st.set_page_config(
     page_title="Drug Therapeutic Classifier",
