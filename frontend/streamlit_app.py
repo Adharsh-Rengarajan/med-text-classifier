@@ -48,11 +48,11 @@ st.markdown(
 with st.sidebar:
     st.header("⚙️ System Status")
     health = check_health()
-    if health is None:
+   if health is None:
         st.error("API Offline — start the FastAPI backend first")
         st.code("uvicorn app:app --reload", language="bash")
-    elif health["model_loaded"]:
-        st.success(f"API Online — {health['classes']} classes loaded")
+    elif health.get("model_loaded"):
+        st.success(f"API Online — {health.get('classes', '?')} classes loaded")
     else:
         st.warning("API running but model not loaded")
 
