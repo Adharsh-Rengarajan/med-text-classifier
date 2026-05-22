@@ -7,7 +7,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "med-text-classifier-production.up.railway.app"
+API_URL = "https://med-text-classifier-production.up.railway.app/"
 
 st.set_page_config(
     page_title="Drug Therapeutic Classifier",
